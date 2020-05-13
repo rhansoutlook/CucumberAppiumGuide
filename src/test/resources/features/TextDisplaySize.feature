@@ -1,11 +1,12 @@
 Feature: Change the text display size in accessibility option
 
-  Scenario: Increase text display size
-  Given that the API demos app is running
-  When I access the accessibility service
-  Then I should be able to increase the size to default
+  Scenario: Set text display size to Default
+    Given that I am in the Display Size option
+    When I click the plus icon
+    Then I should be able to set the size to default
 
-  Scenario: Increase text display size
-    Given that the API demos app is running
-    When I access the accessibility service
-    Then I should be able to decrease the size to small
+  Scenario: Set text display size to Small
+    Given that I am in the Display Size option
+    When I click the minus icon
+    Then I should be able to set the Dispay size to small
+
