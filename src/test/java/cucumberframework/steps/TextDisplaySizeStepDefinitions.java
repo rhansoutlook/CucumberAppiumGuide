@@ -37,6 +37,7 @@ public class TextDisplaySizeStepDefinitions {
 
     }
 
+
     @When("I click the minus icon")
     public void i_click_the_minus_icon() {
         // Write code here that turns the phrase above into concrete actions
