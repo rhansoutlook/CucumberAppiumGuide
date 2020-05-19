@@ -5,26 +5,26 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-import java.util.Properties;
-
 import io.cucumber.java.After;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import io.cucumber.java.Before;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Hook {
 
-    private static WebDriver driver;
+    private static AndroidDriver<AndroidElement> driver;
     private static DesiredCapabilities desiredCapabilities;
     private static String AppName = null;
     private static String DeviceName = null;
 
     @Before("@MobileNative")
-    public void setUpAppium() throws IOException {
+    public void setUp() throws IOException {
+
+        System.out.println("I am in SetUp()");
         if (AppName == null) {
             AppName = PropertyContainer.getProperties().getProperty("AppName");
         }
@@ -32,7 +32,6 @@ public class Hook {
         if (DeviceName == null) {
             DeviceName = PropertyContainer.getProperties().getProperty("DeviceName");
         }
-
 
         desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "AVDNougat");
@@ -50,9 +49,10 @@ public class Hook {
     public void tearDown()
     {
         driver.quit();
+        System.out.println("I am in tearDown()");
     }
 
-    public static WebDriver getDriver()
+    public static AndroidDriver<AndroidElement> getDriver()
     {
         return driver;
     }
