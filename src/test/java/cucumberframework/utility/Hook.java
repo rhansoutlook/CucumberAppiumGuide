@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.testng.annotations.BeforeClass;
 
 public class Hook {
 
@@ -22,6 +23,7 @@ public class Hook {
     private static String DeviceName = null;
 
     @Before("@MobileNative")
+    @BeforeClass()
     public void setUp() throws IOException {
 
         System.out.println("I am in SetUp()");

@@ -29,6 +29,7 @@ public class SetTextDisplaySize_StepDefinitions {
         // Click the button at the bottom of the screen to go further
         driver.findElement(By.xpath("//android.widget.ImageButton[@index=1]")).click();
         //(To resume from here)
+        driver.findElement(By.xpath("(//android.widget.LinearLayout)[2]")).click();
     }
 
     @When("^user clicks the plus icon$")

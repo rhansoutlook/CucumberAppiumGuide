@@ -18,7 +18,7 @@ public class ValidateAppiumDemoScreens_Steps {
     @Given("I open the application")
     public void i_open_the_application() {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertTrue(driver.findElement(By.xpath("//*[@text='Accessibility']")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@text='API Demos']")).isDisplayed());
     }
 
     @When("I tap on Accessibility")
@@ -27,10 +27,28 @@ public class ValidateAppiumDemoScreens_Steps {
         driver.findElement(By.xpath("//*[@text='Accessibility']")).click();
     }
 
-    @Then("I validate Custom View")
-    public void i_validate_Custom_View() {
+    @Then("I validate Custom View is displayed")
+    public void i_validate_Custom_View_is_displayed() {
         // Write code here that turns the phrase above into concrete actions
         Assert.assertTrue(driver.findElement(By.xpath("//*[@text='Custom View']")).isDisplayed(), "Custom View is not displayed");
+    }
+
+    @When("I tap on Media")
+    public void i_tap_on_Media() {
+        // Write code here that turns the phrase above into concrete actions
+        driver.findElement(By.xpath("//*[@text='Media']")).click();
+    }
+
+    @When("I tap on AudioFx")
+    public void i_tap_on_AudioFx() {
+        // Write code here that turns the phrase above into concrete actions
+        driver.findElement(By.xpath("//*[@text='AudioFx']")).click();
+    }
+
+    @Then("I validate Media\\/AudioFx view is displayed")
+    public void i_validate_Media_AudioFx_view_is_displayed() {
+        // Write code here that turns the phrase above into concrete actions
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@text='Media/AudioFx']")).isDisplayed(), "Media/AudiFx screen is not displayed");
     }
 
 
