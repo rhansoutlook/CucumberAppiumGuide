@@ -1,4 +1,4 @@
-package cucumberframework.steps;
+package cucumberframework.steps.Accessibility;
 
 import cucumberframework.utility.Hook;
 import io.appium.java_client.android.AndroidDriver;
