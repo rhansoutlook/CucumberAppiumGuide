@@ -11,5 +11,5 @@ Feature: Validate Demo Screens
     Given I open the application
     When I tap on Media
     And I tap on AudioFx
-    Then I validate Media/AudioFx view is displayed
+    Then I validate Media AudioFx view is displayed
 

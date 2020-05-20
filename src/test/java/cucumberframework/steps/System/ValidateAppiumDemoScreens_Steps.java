@@ -45,11 +45,8 @@ public class ValidateAppiumDemoScreens_Steps {
         driver.findElement(By.xpath("//*[@text='AudioFx']")).click();
     }
 
-    @Then("I validate Media\\/AudioFx view is displayed")
-    public void i_validate_Media_AudioFx_view_is_displayed() {
-        // Write code here that turns the phrase above into concrete actions
+    @Then("I validate Media AudioFx view is displayed")
+    public void iValidateMediaAudioFxViewIsDisplayed() {
         Assert.assertTrue(driver.findElement(By.xpath("//*[@text='Media/AudioFx']")).isDisplayed(), "Media/AudiFx screen is not displayed");
     }
-
-
 }
