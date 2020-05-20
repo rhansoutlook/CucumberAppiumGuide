@@ -1,4 +1,4 @@
-Feature: Caption should toggle on and off
+Feature: Captions
 
   @MobileNative
   Scenario: Set Caption Toggle On and Off
