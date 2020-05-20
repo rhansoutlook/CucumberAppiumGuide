@@ -30,8 +30,6 @@ public class SetCaptionToggle_Steps {
         driver.findElement(By.xpath("//android.widget.ImageButton[@index=1]")).click();
         // Access the Captions Option
         driver.findElement(By.xpath("//android.widget.TextView[@text='Captions']")).click();
-        // verify here that Captions is visible and you are in Captions Option
-        // <TODO>
     }
 
     @When("I click the caption toggle switch")
