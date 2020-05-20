@@ -46,14 +46,11 @@ public class SetCaptionToggle_Steps {
     public void i_should_be_able_to_set_the_caption_toggle_to_on_or_off() {
 
         currentState = driver.findElement(By.xpath("//android.widget.Switch[@index=1]")).getText();
-        System.out.println("Now I am  " + currentState);
+        //System.out.println("Now I am  " + currentState);
+
         if (previousState == "ON")
-        {
-            Assert.assertEquals(currentState,"OFF");
-        }
+            Assert.assertEquals(currentState, "OFF");
         else if (previousState == "OFF")
-        {
-            Assert.assertEquals(currentState,"ON");
-        }
+            Assert.assertEquals(currentState, "ON");
     }
 }
