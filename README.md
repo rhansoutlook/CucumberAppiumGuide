@@ -20,4 +20,6 @@ The features defined in this project are based on reverse engineering existing f
 * Java
 * Cucumber / Gherkin
 * Appium
+* AssertJ
+* TestNG
 
