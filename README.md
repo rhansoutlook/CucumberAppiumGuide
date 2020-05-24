@@ -1,9 +1,10 @@
 # CucumberAppiumGuide
-Title
+
+#Title
 Technology demnstrator that uses both Cucumber / Gherkin open source tool and 
 Appium for Automation Testing on mobile platforms
 
-Description
+#Description
 The attempt has been to demonstrate how features and scenarios can be used to drive  development efforts in a Behavour Driven Development 
 environment and at the same time drive automation tests for a native app.
 
@@ -12,8 +13,7 @@ https://github.com/appium/appium/blob/master/sample-code/apps/ApiDemos-debug.apk
 
 The features defined in this project are based on reverse engineering existing functionality within the app.
 
-Main Environment Components
-
+#Main Environment Components
 * Java
 * Cucumber / Gherkin
 * Appium
