@@ -14,7 +14,7 @@ The features defined in this project are based on reverse engineering existing f
 
 Main Environment Components
 
-Java
-Cucumber / Gherkin
-Appium
+* Java
+* Cucumber / Gherkin
+* Appium
 
