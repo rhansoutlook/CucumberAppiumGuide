@@ -23,10 +23,10 @@ public class Hook {
     private static String DeviceName = null;
 
     @Before("@MobileNative")
-    @BeforeClass()
+    //@BeforeClass()
     public void setUp() throws IOException {
 
-        System.out.println("I am in SetUp()");
+      //  System.out.println("I am in SetUp()");
         if (AppName == null) {
             AppName = PropertyContainer.getProperties().getProperty("AppName");
         }
@@ -51,7 +51,7 @@ public class Hook {
     public void tearDown()
     {
         driver.quit();
-        System.out.println("I am in tearDown()");
+        //System.out.println("I am in tearDown()");
     }
 
     public static AndroidDriver<AndroidElement> getDriver()
