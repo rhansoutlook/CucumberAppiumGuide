@@ -1,6 +1,7 @@
 # CucumberAppiumGuide
 
 **Title**
+
 Technology demnstrator that uses both Cucumber / Gherkin open source tool and 
 Appium for Automation Testing on mobile platforms
 
